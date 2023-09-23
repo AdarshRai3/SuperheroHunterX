@@ -7,9 +7,10 @@ let date = new Date();
 console.log(date.getTime());
 
 // Define your timestamp, apiKey, and hashValue here
-const timestamp = 'your_timestamp';
-const apiKey = 'your_api_key';
-const hashValue = 'your_hash_value';
+const timestamp = "1681802982381";
+const apiKey = "801ffb179c43e62422d9c6ac3f1203f0";
+const hashValue = "193684c59a81e2cc3100b4c41800d011";
+
 
 function displayWords(value) {
   input.value = value;
