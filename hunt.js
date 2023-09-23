@@ -6,7 +6,7 @@ let listContainer = document.querySelector(".list");
 let date = new Date();
 console.log(date.getTime());
 
-const { ts, public_key, hash } = require('./api.js');
+const [timestamp, apiKey, hashValue] = [ts, publicKey, hashVal];
 
 function displayWords(value) {
   input.value = value;
@@ -23,7 +23,7 @@ input.addEventListener("keyup", async () => {
     return false;
   }
 
-  const url = `https://gateway.marvel.com:443/v1/public/characters?ts=${ts}&apikey=${public_key}&hash=${hash}&nameStartsWith=${input.value}`;
+  const url = `https://gateway.marvel.com:443/v1/public/characters?ts=${timestamp}&apikey=${apiKey}&hash=${hashValue}&nameStartsWith=${input.value}`;
 
   const response = await fetch(url);
   const jsonData = await response.json();
@@ -49,7 +49,7 @@ button.addEventListener(
         return;
       }
       showContainer.innerHTML = "";
-      const url = `https://gateway.marvel.com:443/v1/public/characters?ts=${ts}&apikey=${public_key}&hash=${hash}&name=${input.value}`;
+      const url = `https://gateway.marvel.com:443/v1/public/characters?ts=${timestamp}&apikey=${apiKey}&hash=${hashValue}&name=${input.value}`;
   
       const response = await fetch(url);
       const jsonData = await response.json();
