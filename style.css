@@ -14,7 +14,7 @@
     margin: 0 auto;
     padding: 3em 2em;
     position: absolute;
-    transform: translateX(-50%);
+    transform: translate(-50%,50%);
     left: 50%;
     right: 50%;
     top: 1em;
@@ -22,8 +22,8 @@
   }
   .input-container {
     display: grid;
-    grid-template-columns: 9fr 3fr;
-    gap: 1em;
+    grid-template-columns: 9fr 5fr;
+    gap: 1em;  
   }
   input {
     padding: 1em 0.5em;
@@ -39,6 +39,14 @@
     background-color: #e01a38;
     color: #ffffff;
     border-radius: 0.5em;
+  }
+  button:hover {
+    outline: none;
+    border: none;
+    background-color: goldenrod;
+    color: black;
+    border-radius: 0.5em;
+    
   }
   .display-container {
     padding: 1em;
