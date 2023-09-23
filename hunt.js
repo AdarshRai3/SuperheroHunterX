@@ -6,7 +6,10 @@ let listContainer = document.querySelector(".list");
 let date = new Date();
 console.log(date.getTime());
 
-const [timestamp, apiKey, hashValue] = [ts, publicKey, hashVal];
+// Define your timestamp, apiKey, and hashValue here
+const timestamp = 'your_timestamp';
+const apiKey = 'your_api_key';
+const hashValue = 'your_hash_value';
 
 function displayWords(value) {
   input.value = value;
