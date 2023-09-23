@@ -5,7 +5,9 @@
     font-family: "Poppins", sans-serif;
   }
   body {
-    background-color: #e01a38;
+    background:url("assets/images/home1.jpg");
+    background-size: cover;
+    background-position: center;
   }
   .containerA {
     background-color: #171821;
