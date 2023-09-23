@@ -38,7 +38,7 @@
     border: none;
     background-color: #e01a38;
     color: #ffffff;
-    border-radius: 0.5em;
+    border-radius: 1rem;
   }
   button:hover {
     outline: none;
